@@ -183,8 +183,11 @@ function App() {
         d.properties.type === "water"
           ? [0, 0, 139, 255]
           : d.properties.type === "wastewater"
+          
             ? [9, 121, 105, 255]
-            : [204, 85, 0, 255],
+            : d.properties.type === "stormwater"
+            ? [204, 85, 0, 255]
+            :[113, 121, 126,255],
       getText: (d: any)=>d.properties.date, 
       getTextColor: [0,0,0,255], 
       getTextSize: 32, 
