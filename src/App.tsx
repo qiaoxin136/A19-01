@@ -145,6 +145,7 @@ function App() {
     { value: 'water', label: 'Water' },
     { value: 'wastewater', label: 'Wastewater' },
     { value: 'stormwater', label: 'Stormwater' },
+    { value: 'pavement', label: 'Pavement'}
   ];
 
   const options2: SelectOption[] = [
